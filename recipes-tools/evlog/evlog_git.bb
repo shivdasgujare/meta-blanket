@@ -3,7 +3,7 @@ SECTION = "devel"
 LICENSE = "LGPL"
 LIC_FILES_CHKSUM = "file://COPYING;md5=9b06af1a3b4b964300b585224ea2158e"
 
-SRCREV = "2d538f12685b48a4143e48dca1f4febaa7e48714"
+SRCREV = "ee01fa7fbd8b944cfbe914c85cbae662373cfc2b"
 PV = "1.0+gitr${SRCPV}"
 PR = "r0"
 
