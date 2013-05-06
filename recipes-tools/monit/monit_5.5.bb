@@ -2,7 +2,7 @@ DESCRIPTION = "Monitoring utility"
 LICENSE = "GPLv3"
 LIC_FILES_CHKSUM = "file://COPYING;md5=8f2057d797dcf340e16719314cfd69b2"
 
-DEPENDS = "openssl"
+DEPENDS = "openssl libpam"
 PR = "r2"
 
 SRCREV = "ff336b870de547d43a26165986a966252527c662"
@@ -23,7 +23,7 @@ INITSCRIPT_PARAMS = "defaults 99"
 
 inherit autotools update-rc.d
 
-EXTRA_OECONF = "--with-ssl-lib-dir=${STAGING_LIBDIR} --with-ssl-incl-dir=${STAGING_INCDIR} --without-pam" 
+EXTRA_OECONF = "--with-ssl-lib-dir=${STAGING_LIBDIR} --with-ssl-incl-dir=${STAGING_INCDIR}" 
 EXTRA_OECONF += "libmonit_cv_setjmp_available=yes libmonit_cv_vsnprintf_c99_conformant=yes"
 
 do_install_append() {
